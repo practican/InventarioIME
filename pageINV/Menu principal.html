@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html  lang="es" style="background:linear-gradient( to right bottom,white,#3df3ee,purple);width: 100%;height:2500px">
+<script src="jquery.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("ul#Menú li a").click(function(e) {
+    e.preventDefault();
+
+    $("#conte").attr("src", $(this).attr("href"));
+  })
+});
+</script>
+
+<style type="text/css">
+h1 {text-align: center; color: black;font-size: 3vw}
+a{font-size:2vw;
+    color:black;
+      text-decoration: none;
+  text-align:center;background:linear-gradient(white,red);position:center;height:400px;width:400px;margin-left: auto;margin-right: auto;border-radius:7px;
+}
+iframe#conte {width:1300px;height:700px;float:left;background-color: purple;border-radius:10px;margin-left: 30px;
+}
+</style>
+<head>
+        <title>Menu principal</title>
+        <h1>Menu principal</h1>
+</head>
+
+<body style="position:absolute;height:90%;width:90%;text-align:center;margin-left:5%;">
+  <div style="margin-left:auto;margin-right:auto;width:100%">
+      <div style=" text-align:left; background:linear-gradient(#9E9E9E, #424242, #424242, #9E9E9E);float: left;border-radius:10px;height:600px;width:300px;">
+        <ul id="Menú">
+          <li><a id="regis" href="registrar usuario" > Ingresar Usuario </a></li>
+          <li><a id="logi" href="Ingreso">Inventario</a></li>
+        </ul>
+      </div>
+      <iframe id="conte" src="" frameborder="0"></iframe>
+</div>
+</body>
+</html>

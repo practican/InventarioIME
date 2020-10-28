@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" style="background:linear-gradient( to left top,#424242,#9E9E9E,#9E9E9E,#424242);height:2500px;">
+  <head>
+    <meta charset="utf-8">
+    <title>Ingreso</title>
+<style type="text/css">
+a {font-size: 2vw;
+color: black;
+text-align:center; background:linear-gradient(#424242,#9E9E9E,#9E9E9E,#424242);height:50;width:70px
+}
+input{
+
+}
+div{align:center
+}
+
+
+</style>
+    </head>
+  <body>
+    <div style=" background:linear-gradient(#424242,#9E9E9E,#9E9E9E,#424242);text-align:center;height:50px;width:400px;margin-left: auto;margin-right: auto;border-radius:7px;">
+    <h1>Ingreso</h1>
+  </div>
+  <br>
+  <form id="formulario1" name="formulario1" method="post" action="data.php">
+
+    <div style="background:linear-gradient(#424242,#9E9E9E,#9E9E9E,#424242);position:center;height:400px;width:400px;margin-left:auto;margin-right:auto;border-radius:7px;">
+      <a style="margin-left:130px;margin-right:auto;border-radius:7px">Usuario:</a><br>
+      <input type="text" name="nombre" id="nombre" placeholder="Usuario" style="margin-right:auto;margin-left:118px"><br>
+      <a style="margin-left:112px;margin-right:auto;border-radius:7px">Contraseña:</a>
+		<input type="text" name="Contraseña" placeholder="Contraseña" id="Contraseña"  style="margin-right:auto;margin-left:118px"><br>
+    
+    <input type="button" name="validar"  value="validar"style="margin-right:auto;margin-left:160px;">
+
+	</form>
+
+    </div>
+
+  </body>
+</html>
